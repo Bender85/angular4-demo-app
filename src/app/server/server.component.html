@@ -1,3 +1,12 @@
 <p>
   server works!
 </p>
+<label>User Name is <span>{{usename}}</span></label>
+<input type="text" class="form-control" [(ngModel)]="usename">
+
+<button type="button" class="btn btn-primary" (click)="onChangeName()">Change user name</button>
+<button type="button" class="btn btn-primary" (click)="clear()">Clear</button>
+
+
+<button type="button" class="btn btn-primary" (click)="count()">counter</button>
+<p>{{counter}}</p>
